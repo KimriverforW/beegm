@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>beeeegm</title>
+    <style type="text/css">
+        body{background-color:black;
+    font-family: arial;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    top:500px;}
+        .button {
+    display: inline-block;
+    padding: 10px 2px;
+    margin: 4px;
+    width: 56px;
+    height: 40px;
+    font-size: 35px;
+    text-align: center;
+    border: solid 1px black;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: white;
+    transition: background-color 75ms ease-out;
+    </style>
+</head>
+<body>
+    <div>
+        <div class="buttons" style="margin: 0px; padding: 0px 180px;">
+            <div class="button-row"><div class="button button-0" pressure="false" released="true" buttonnum="0" id="a">1</div><div class="button button-1" pressure="false" released="true" buttonnum="1">2</div><div class="button button-2" pressure="false" released="true" buttonnum="2">3</div><div class="button button-3" pressure="false" released="true" buttonnum="3">4</div><div class="button button-4" pressure="true" released="true" buttonnum="4">5</div><div class="button button-5" pressure="true" released="true" buttonnum="5">6</div><div class="button button-6" pressure="true" released="true" buttonnum="6">7</div><div class="button button-7" pressure="true" released="true" buttonnum="7">8</div><div class="button button-8" pressure="true" released="true" buttonnum="8">9</div><div class="button button-9" pressure="true" released="true" buttonnum="9">0</div><div class="button button-10" pressure="false" released="true" buttonnum="10">-</div><div class="button button-11" pressure="false" released="true" buttonnum="11">=</div></div><div class="button-row"><div class="button button-36" pressure="false" released="true" buttonnum="36">Z</div><div class="button button-37" pressure="false" released="true" buttonnum="37">X</div><div class="button button-38" pressure="false" released="true" buttonnum="38">C</div><div class="button button-39" pressure="false" released="true" buttonnum="39">V</div><div class="button button-40" pressure="false" released="true" buttonnum="40">B</div><div class="button button-41" pressure="true" released="true" buttonnum="41">N</div><div class="button button-42" pressure="false" released="true" buttonnum="42">M</div><div class="button button-43" pressure="false" released="true" buttonnum="43">,</div><div class="button button-44" pressure="false" released="true" buttonnum="44">.</div><div class="button button-45" pressure="false" released="true" buttonnum="45">/</div><div class="button button-46" pressure="false" released="true" buttonnum="46">\s</div><div class="button button-47" pressure="false" released="true" buttonnum="47">NA</div></div></div>
+            
+            <script type="text/javascript">
+            var astate = "off";
+            a.onclick = function(){
+            if(astate == "off"){
+                a.style.opacity = "1";
+                aa.volume = 1;
+                aa.play();
+                astate = "on";
+            }
+            else{a.style.opacity = "0.5";
+                aa.pause();
+                astate = "off";}
+            </script>
+    </div>
+</body>
+</html>
